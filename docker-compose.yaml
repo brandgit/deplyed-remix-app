@@ -1,0 +1,10 @@
+services:
+  app:
+    environment:
+      - APP_ENV
+
+    container_name: deployed_app
+    image: varkoff/deployed-app:production
+    restart: always
+    ports:
+      - 3000
